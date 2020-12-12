@@ -1,0 +1,185 @@
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --max-creator-display-img-width:70px;
+  --max-creator-display-img-book-width:50px;
+  --max-books-list-width:280px;
+  --max-books-list-img-width:273px;
+}
+
+/* copy and paste */
+  /* !important is needed sometimes */
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: black; 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: black; 
+}
+ /* copy and paste above */
+
+
+.App {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: #49beb7;
+  
+}
+
+/* header */
+.header-intro
+{
+
+  border-top:2px solid;
+  border-bottom:2px solid;
+  margin-bottom: .5rem;
+  padding-bottom: 0.5rem;
+  background-color: #ff5959;
+
+}
+
+.header-intro h1
+{
+  margin-top:.5rem;
+  font-weight: 900;
+  font-size: 3rem;
+  color:#fff;
+
+}
+
+/* recommneders */
+.main-creator
+{
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.creator-display
+{
+flex:1;
+margin:auto .5rem;
+/* background-color: #49beb7; */
+}
+
+.creator-display h3
+{ 
+ font-weight: 600;
+}
+
+.creator-img
+{
+cursor: pointer;
+max-width: var(--max-creator-display-img-width);
+border-radius: 50%;
+margin-top:.2rem;
+border:2px solid;
+}
+
+/* books recommnede */
+.main-books
+{
+   margin-bottom: 1rem;
+   margin-bottom: 0;
+}
+
+.main-books-lists
+{
+list-style-type: none;
+max-width: var(--max-books-list-width);
+margin: auto;
+
+}
+
+.main-book-lists-style
+{
+  max-width: var(--max-books-list-width);
+  border:2px solid;
+  margin-bottom: 1rem;
+  background-color: #feffff;
+}
+
+.main-book-lists-style #main-book-lists-style-head-image
+{
+  max-width: 100%;
+}
+
+.main-book-lists-style #main-book-lists-style-creator-image
+{
+  max-width: var(--max-creator-display-img-book-width);
+  border-radius: 50%;
+  float: left;
+}
+
+.main-book-lists-style #main-book-lists-style-book-details
+{
+  display: flex;
+  flex-direction: column;  
+  padding-bottom: .5rem;
+  
+}
+
+/* loader-for-animation-only --copy-pasted*/
+
+#loader{
+  visibility: hidden;
+}
+
+#loader {
+  position: fixed;
+  height: 5rem;
+  width: 5rem;
+  overflow: show;
+  margin:auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; 
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  animation: spin 2s linear infinite;
+}
+
+#loader:before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* footer */
