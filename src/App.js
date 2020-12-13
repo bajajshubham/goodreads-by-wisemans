@@ -21,14 +21,14 @@ const creators = {
   "Kunal Shah" :[
     {
       "Author":"Al Ramdan",
-      "BookName":"Play Bigger: How Pirates, Dreamers and Innovators Create and Dominate ",
-      "BookcoverURL":"https://raw.githubusercontent.com/bajajshubham/files-hosted/master/goodreads-by-wiseman/creators/kunalshah/bookscover/playbigger_alramdan.jpg"
-    },
-    
-    {
-      "Author":"David Epstein",
       "BookName":"Range-Generalists-Triumph-Specialized-World",
       "BookcoverURL":"https://raw.githubusercontent.com/bajajshubham/files-hosted/master/goodreads-by-wiseman/creators/kunalshah/bookscover/rangehow_davidespstein.jpg"
+
+    },
+    {
+      "Author":"David Epstein",
+      "BookName":"Play Bigger: How Pirates, Dreamers and Innovators Create and Dominate ",
+      "BookcoverURL":"https://raw.githubusercontent.com/bajajshubham/files-hosted/master/goodreads-by-wiseman/creators/kunalshah/bookscover/playbigger_alramdan.jpg"
     }
   ],
 
