@@ -204,13 +204,30 @@ export default function App() {
    
   },3000);
 
-  
-  
 }
 
+function onAppLoad()
+{
+  var divLoader = "";
+ 
+  console.log("inside onAppLoad()..");
+  
+  setTimeout(function(){
+    divLoader = document.querySelector("#loader");
+    divLoader.style.visibility="visible";
+  },1000);  
+
+  setTimeout(function(){
+    var divApp = document.querySelector(".App");
+    console.log(divApp,divLoader);  
+    divLoader.style.visibility="hidden";
+    divApp.style.visibility="visible"; 
+  },3000);
+
+}
 
   return (
-    <div className="App" >
+    <div className="App"  style={{visibility:"hidden"}} onLoad={onAppLoad()} >
       
       <div id="loader"></div>
 

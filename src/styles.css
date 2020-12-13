@@ -42,6 +42,12 @@
 }
  /* copy and paste above */
 
+body
+{
+  background-color: #49beb7;
+  
+}
+
 
 .App {
   font-family: 'Roboto', sans-serif;
