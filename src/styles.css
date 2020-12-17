@@ -53,7 +53,8 @@ body
 .App {
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  background-color: #49beb7;
+/*   background-color: #49beb7; */
+/*   linear-gradient(45deg, #8b2222, #5c2cec, transparent) */
   
 }
 
