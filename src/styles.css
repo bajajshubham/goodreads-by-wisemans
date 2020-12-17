@@ -45,6 +45,7 @@
 body
 {
   background-color: #49beb7;
+  background: linear-gradient(45deg, #8b2222, #5c2cec, transparent);
   
 }
 
